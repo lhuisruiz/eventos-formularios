@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: px solid red;
+    text-decoration: none;
+}
+/*Noche-dia*/
+
+[data-theme="light"] {
+    --primary: #2016b1;
+    --background: #ffffff;
+    --color--color--uno: #2016b1;
+    /*boton*/
+    --lines: #fff;
+    --linea-sonbra: #0000005b;
+    /*texto*/
+    --text: #000000;
+    --textuno: rgb(255, 255, 255)0;
+    /*sombras*/
+    --color: #ffffff;
+    --sombrauno: #d9d9d9;
+    --sombrados: #ffffff;
+    /*formulario*/
+    --formulario: rgb(255, 255, 255);
+    /*formulario sombra*/
+    --formulario-sobra: rgb(219, 219, 219);
+    /*llenar*/
+    --fondo-llenar: #ffffff;
+    --linea-llenar: #6666666b;
+    /*wspp*/
+    --wspp-tex: #fff;
+}
+
+[data-theme="dark"] {
+    --primary: #690981;
+    --background: rgb(0, 0, 0);
+    --color--color--uno: #690981;
+    /*boton*/
+    --lines: #000000;
+    --linea-sonbra: #c9c9c96c;
+    /*texto*/
+    --text: #fff;
+    --textuno: rgb(255, 255, 255)0;
+    /*sombras*/
+    --color: #dfdfdf;
+    --sombrauno: rgb(54, 54, 54);
+    --sombrados: rgb(54, 54, 54);
+    /*formulario*/
+    --formulario: rgb(10, 10, 10);
+    /*formulario sombra*/
+    --formulario-sobra: rgb(0, 0, 0);
+    /*llenar*/
+    --fondo-llenar: #000000;
+    --linea-llenar: #ffffff4b;
+    /*wspp*/
+    --wspp-tex: #fff;
+}
+
+.contenido{
+    width: 100%;
+    height: auto;
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.contenido-15{
+    width: 400px;
+    height: 122px;
+    background-color: var(--);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 15px;
+    border-radius: 5px;
+}
+.img-img{
+    width: 120px;
+    height: 120px;   
+   object-fit: cover;
+   object-position: 40% 1%;
+   border-radius: 10px 0px 0px 10px;
+}
+.img-img-dos{
+    width: 120px;
+    height: 120px;   
+   object-fit: cover;
+   object-position: 80% 1%;
+   border-radius: 10px 0px 0px 10px;
+}
+.img-img-tres{
+    width: 120px;
+    height: 120px;   
+   object-fit: cover;
+   object-position: 80% 40%;
+   border-radius: 10px 0px 0px 10px;
+}
+.div-tex{
+    width: 200px;
+    height: 120px;
+    background-color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0px 10px 10px 0px ;
+}
+.texuno{
+    font-size: 10px;
+    color: var(--background);
+    margin: 5px;
+}
+.texdos{
+    font-size: 23px;
+    margin: 5px;
+    color: var(--background);
+}
+.tex-tex{
+    color: var(--text);
+    margin-top: 30px;
+}

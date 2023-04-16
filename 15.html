@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <!--boton 1-->
+    <div class="noche"><label class="switch">
+            <input type="checkbox" id="slider" checked>
+            <span class="slider"></span>
+        </label></div>
+
+    <div class="contenido-principal">
+        <div class="formulario">
+            <h1 class="titulo">Lhuis Fotografo</h1>
+            <h1 class="numero">+54 11 4438-2987</h1>
+            <p>Formulario de presupuesto para cumpleaños de 15 años</p>
+            <div class="casilla"><input id="nombref" type="text" name="" class="llenar" placeholder="Nombre"
+                    autocomplete="off">
+                <div class="div-ico"> <i class="fa-solid fa-question ico"></i></div>
+            </div>
+            <div class="casilla"><input id="fecha" type="text" name="" class="llenar" placeholder="Fecha"
+                    autocomplete="off">
+                <div class="div-ico"> <i class="fa-solid fa-question ico"></i></div>
+            </div>
+            <div class="selected"> <select id="horas" class="casilla-opt" name='valor' required>
+                    <option selected disabled>Horas: $ 4mil</option>
+                    <option>1 hora: $4mil</option>
+                    <option>2 hora: $8mil</option>
+                    <option>3 hora: $16mil</option>
+                    <option>4 hora: $20mil</option>
+                    <option>5 hora: $24mil</option>
+                    <option>5 hora: $28mil</option>
+                </select>
+                <div class="div-ico"><i class="fa-solid fa-question ico"></i></div>
+            </div>
+            <div class="casilla"><input id="horarios" type="text" name="" class="llenar"
+                    placeholder="Horarios del evento" autocomplete="off">
+                <div class="div-ico"> <i class="fa-solid fa-question ico"></i></div>
+            </div>
+            <!---
+            <div class="checkbox">
+                <label><input type="checkbox" id="cbox1" value="first_checkbox">
+                    <h4 class="tex-check">Salon</h4>
+                </label><br>
+                <label><input type="checkbox" id="cbox1" value="first_checkbox">
+                    <h4 class="tex-check">Quinta</h4>
+                </label><br>
+                <label><input type="checkbox" id="cbox1" value="first_checkbox">
+                    <h4  class="tex-check">Casa</h4>
+                </label><br>
+                <div class="div-ico2"> <i class="fa-solid fa-question ico"></i></div>
+            </div>-->
+            <div class="casilla"><input id="ubicacion" type="text" name="" class="llenar" placeholder="Ubicacion"
+                    autocomplete="off">
+                <div class="div-ico"> <i class="fa-solid fa-question ico"></i></div>
+            </div>
+            <p>Con este formulario tengas <br>una idea de cuanto vas a pagar para el evento <br>se avona seña para
+                guardar la fecha.</p>
+        </div>
+
+    </div>
+    <div class="entrega">
+        <div class="formulario2">
+            <div>
+                <h1 class="titulo">Entrega de Fotos</h1>
+            </div>
+            <h3>Elija una opción para la entrega de fotos </h3>
+            <div class="checkbox2">
+
+                <div class="div-op">
+                    <div class="div-ico3"> <i class="fa-solid fa-question ico3"></i></div>
+                    <select id="uno" class="op" name='valor' required>
+                        <option selected disabled>✔</option>
+                        <option value="">Si</option>
+                    </select>
+                    <h4 class="tex-check">$ 0 / Aplicacion Mis Fotos </h4>
+                </div>
+                <div class="div-op">
+                    <div class="div-ico3"> <i class="fa-solid fa-question ico3"></i></div>
+                    <select id="dos" class="op" name='valor' required>
+                        <option selected disabled>❌</option>
+                        <option value="">Si, 50 Unidades</option>
+                        <option value="">No</option>
+                    </select>
+                    <h4 class="tex-check">$ 4.200 / Impresa 50unidades (10x15 cm)</h4>
+                </div>
+                <div class="div-op">
+                    <div class="div-ico3"> <i class="fa-solid fa-question ico3"></i></div>
+                    <select id="tres" class="op" name='valor' required>
+                        <option selected disabled>❌</option>
+                        <option value="">Si, 100 unidades</option>
+                        <option value="">No</option>
+                    </select>
+                    <h4 class="tex-check">$ 9.000 / Impresa 100unidades (10x15 cm)</h4>
+                </div>
+                <div class="div-op">
+                    <div class="div-ico3"> <i class="fa-solid fa-question ico3"></i></div>
+                    <select id="cuatro" class="op" name='valor' required>
+                        <option selected disabled>❌</option>
+                        <option value="">Si, Con Pendrive</option>
+                        <option value="">No</option>
+                    </select>
+                    <h4 class="tex-check">$ 4.000 / Pendrive 32gb</h4>
+                </div>
+                <div class="div-op">
+                    <div onclick="modal_05();" class="div-ico3"> <i class="fa-solid fa-question ico3"></i></div>
+                    <select id="cinco" class="op" name='valor' required>
+                        <option selected disabled>❌</option>
+                        <option value="">Si, Con tarjeta de memoria</option>
+                        <option value="">No</option>
+                    </select>
+                    <h4 class="tex-check">$3.000 / tarjeta de memoria 32gb</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="div-bt">
+        <button class="bt-whatsapp" id="send">Enviar Por whatsapp <img class="whatsapp"
+            src="https://phx02pap002files.storage.live.com/y4mjmsrHNmUPT6HjzAEwtTQZXfuUti5YLJGnR4t9FQUOWxVJZ3ctl1ZU71mhXPwONgbdrMMHc_jFP14bzgMr6klC7TWfsNT3OrTsaf-OXwjmu7tZL-QElr7_CEDTtl46kyplXPWKZzwdbEPlWDC6Z6E0l4bqAefvMOwuW10bFz2WTmRxmMYT641cKbuiF1LlCvu?width=500&height=500&cropmode=none"
+            alt=""></button>
+    </div>
+    
+    <div>
+
+        <div></div>
+    </div>
+    <!--
+    <fieldset>
+
+        <h1>Presupuesto</h1>
+        <div class="contenido-uno">
+            <p class="Completar">Reuniones</p>
+            <div class="box">
+
+                <input type="text" name="" class="pnombre" id="nombre" placeholder="Por favor pon tu Nombre"
+                    autocomplete="off">
+            </div>
+            <div class="caja1">
+                <div class="box2">
+                    <div class="bt1">
+                        <p class="tbt">Domingo</p>
+                    </div>
+                </div>
+                <div class="servicio-uno">
+                    <select class="selected-uno" name='valor' id="domingo" required>
+                        <option selected disabled>Estado</option>
+                        <option>si</option>
+                        <option>no</option>
+                    </select>
+                </div>
+            </div>
+            <div class="box">
+                <input type="text" name="" class="pnombre" id="Motivo1" placeholder="Motivo de falta Domingo"
+                    autocomplete="off">
+            </div>
+            <div class="caja1">
+                <div class="box2">
+                    <div class="bt1">
+                        <p class="tbt">Miercoles</p>
+                    </div>
+                </div>
+                <div class="servicio-uno">
+                    <select class="selected-uno" name='valor' id="miercoles" required>
+                        <option selected disabled>Estado</option>
+                        <option>si</option>
+                        <option>no</option>
+                    </select>
+                </div>
+            </div>
+            <div class="box">
+                <input type="text" name="" class="pnombre" id="Motivo2" placeholder="Motivo de falta Miercoles"
+                    autocomplete="off">
+            </div>
+            <div class="caja1">
+                <div class="box2">
+                    <div class="bt1">
+                        <p class="tbt">Viernes</p>
+                    </div>
+                </div>
+
+                <div class="servicio-uno">
+                    <select class="selected-uno" name='valor' id="viernes" required>
+                        <option selected disabled>Estado</option>
+                        <option>si</option>
+                        <option>no</option>
+                    </select>
+                </div>
+            </div>
+            <div class="box">
+                <input type="text" name="" class="pnombre" id="Motivo3" placeholder="Motivo de falta Viernes"
+                    autocomplete="off">
+            </div>
+        </div>
+        <div class="contenido-dos">
+            <p class="Completar">Invitados</p>
+            <div class="caja1">
+                <div class="box2">
+                    <div class="bt1">
+                        <p class="tbt">Viernes</p>
+                    </div>
+                </div>
+                <div class="servicio-uno">
+                    <select class="selected-uno" name='valor' id="viernesdos" required>
+                        <option selected disabled>Estado</option>
+                        <option>No</option>
+                        <option>Si</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="caja1">
+                <div class="box2">
+                    <div class="bt1">
+                        <p class="tbt">Domingo</p>
+                    </div>
+                </div>
+                <div class="servicio-uno">
+                    <select class="selected-uno" name='valor' id="domingodos" required>
+                        <option selected disabled>Estado</option>
+                        <option>No</option>
+                        <option>Si</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="contenido-dos">
+            <p class="Completar">Evangelización</p>
+            <div class="caja1">
+                <div class="box2">
+                    <div class="bt1">
+                        <p class="tbt">Principal</p>
+                    </div>
+                </div>
+                <div class="servicio-uno">
+                    <select class="selected-uno" name='valor' id="principal" required>
+                        <option selected disabled>Estado</option>
+                        <option>si</option>
+                        <option>no</option>
+                    </select>
+                </div>
+            </div>
+            <div class="box">
+                <input type="text" name="" class="pnombre" id="Motivo6" placeholder="Motivo de falta"
+                    autocomplete="off">
+            </div>
+            <div class="caja1">
+                <div class="box2">
+                    <div class="bt1">
+                        <p class="tbt">Grupo</p>
+                    </div>
+                </div>
+                <div class="servicio-uno">
+                    <select class="selected-uno" name='valor' id="grupo" required>
+                        <option selected disabled>Estado</option>
+                        <option>si</option>
+                        <option>no</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="caja1">
+                <div class="box2">
+                    <div class="bt1">
+                        <p class="tbt">Punto en La Puerta</p>
+                    </div>
+                </div>
+                <div class="servicio-uno">
+                    <select class="selected-uno" name='valor' id="punto" required>
+                        <option selected disabled>Estado</option>
+                        <option>si</option>
+                        <option>no</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <p class="Completar">Momento Evg</p>
+            <div class="caja1">
+                <div class="box2">
+                    <div class="bt1">
+                        <p class="tbt">Semanal / Mensual</p>
+                    </div>
+                </div>
+                <div class="servicio-uno">
+                    <select class="selected-uno" name='valor' id="semanal" required>
+                        <option selected disabled>Estado</option>
+                        <option>si</option>
+                        <option>no</option>
+                    </select>
+                </div>
+            </div>
+            <div class="box">
+                <input type="text" name="" class="pnombre" id="Motivo9" placeholder="Motivo de falta Semanal/Mensual"
+                    autocomplete="off">
+            </div>
+            <p class="Completar">Observaciones</p>
+            <div class="box">
+                <input type="text" class="pnombre" name="" id="detalle" placeholder="Detalle" autocomplete="off">
+            </div>
+            <h6>Programador @LhuisRuiz</h6>
+        </div>
+        <div class="box">
+         
+        </div>
+    </fieldset>
+    <div></div>-->
+</body>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="text/javascript">
+
+    document.addEventListener("DOMContentLoaded", () => {
+
+        let allDivs = document.querySelectorAll("div")
+
+        allDivs[allDivs.length - 1].innerHTML = ""
+
+    })
+
+</script>
+<script>
+    const evento = document.getElementById('send')
+    const enviarFormulario = () => {
+        let nombref = document.getElementById('nombref').value;
+        let fecha = document.getElementById('fecha').value;
+        let horas = document.getElementById('horas').value;
+        let horarios = document.getElementById('horarios').value;
+        let ubicacion = document.getElementById('ubicacion').value;
+
+        let uno = document.getElementById('uno').value;
+        let dos = document.getElementById('dos').value;
+        let tres = document.getElementById('tres').value;
+        let cuatro = document.getElementById('cuatro').value;
+        let cinco = document.getElementById('cinco').value;
+
+
+
+        //5491122874280
+        let numero = 5491144382987;
+
+        var win = window.open(`https://wa.me/${numero}?text=
+Hola%20soy%20*${nombref}*%0A
+Fecha del evento%20*${fecha}*%0A
+Precio por%20*${horas}*%0A
+Horarios del evento%20*${horarios}*%0A
+ubicacion%20*${ubicacion}*%0A%0A
+Entrega de fotos%0A
+Aplicacion Mis fotos${uno}%0A
+${dos}%0A
+${tres}%0A
+${cuatro}%0A
+${cinco}%0A
+`, '_blank');
+    }
+    evento.addEventListener('click', enviarFormulario)
+
+</script>
+<script src="js/main.js"></script>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/79ad84d6c1.js" crossorigin="anonymous"></script>
+
+</html>
